@@ -368,28 +368,31 @@
           </svg>
         </button>
       </div>
-      <form class="modal__form">
+      <form class="modal__form" autocomplete="off">
         <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
         <div class="modal__field">
-          <label for="name">Ім'я</label>
-          <input type="text" name="name" id="name">
+          <label class="modal__label" for="name">Ім'я</label>
+          <input class="modal__input" type="text" name="name" id="name">
         </div>
         <div class="modal__field">
-          <label for="tel">Телефон</label>
-          <input type="tel" name="tel" id="tel">
+          <label class="modal__label" for="tel">Телефон</label>
+          <input class="modal__input" type="tel" name="tel" id="tel" autocomplete="off">
         </div>
         <div class="modal__field">
-          <label for="email">Пошта</label>
-          <input type="email" name="email" id="email">
+          <label class="modal__label" for="email">Пошта</label>
+          <input class="modal__input" type="email" name="email" id="email" autocomplete="on">
         </div>
         <div class="modal__field">
-          <label for="comment">Коментар</label>
-          <input type="text" name="comment" id="comment">
+          <label class="modal__label" for="comment">Коментар</label>
+          <textarea class="modal__comment" name="comment" id="comment" placeholder="Введіть текст"></textarea>
         </div>
-        <div class="modal__field">
+        <div class="modal__policy">
           <input type="checkbox" name="policy" id="policy">
-          <label for="policy">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></label>
+          <label class="modal__policy-label" for="policy">Погоджуюся з розсилкою та приймаю <a href=""
+              class="modal__policy-link">Умови
+              договору</a></label>
         </div>
+        <button type="submit" class="modal__send-btn">Відправити</button>
     </div>
   </div>
 
