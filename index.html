@@ -373,25 +373,36 @@
         <div class="modal__field">
           <label class="modal__label" for="name">Ім'я</label>
           <input class="modal__input" type="text" name="name" id="name">
+          <svg class="modal__icon" width="18px" height="18px">
+            <use href="./images/icons.svg#icon-person"></use>
+          </svg>
         </div>
         <div class="modal__field">
           <label class="modal__label" for="tel">Телефон</label>
           <input class="modal__input" type="tel" name="tel" id="tel" autocomplete="off">
+          <svg class="modal__icon" width="18px" height="18px">
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg>
         </div>
         <div class="modal__field">
           <label class="modal__label" for="email">Пошта</label>
           <input class="modal__input" type="email" name="email" id="email" autocomplete="on">
+          <svg class="modal__icon" width="18px" height="18px">
+            <use href="./images/icons.svg#icon-email"></use>
+          </svg>
         </div>
         <div class="modal__field">
           <label class="modal__label" for="comment">Коментар</label>
           <textarea class="modal__comment" name="comment" id="comment" placeholder="Введіть текст"></textarea>
         </div>
-        <div class="modal__policy">
-          <input type="checkbox" name="policy" id="policy">
-          <label class="modal__policy-label" for="policy">Погоджуюся з розсилкою та приймаю <a href=""
-              class="modal__policy-link">Умови
-              договору</a></label>
-        </div>
+        <label class="modal__policy-label">
+          <input class="modal__policy-chekbox" type="checkbox" name="policy" id="policy">
+          <svg class="modal__policy-icon" width="16px" height="15px">
+            <use href="./images/icons.svg#icon-check"></use>
+          </svg>
+          <span class="modal__policy-text">Погоджуюся з розсилкою та приймаю <a href="" class="modal__policy-link">Умови
+              договору</a></span>
+        </label>
         <button type="submit" class="modal__send-btn">Відправити</button>
     </div>
   </div>
